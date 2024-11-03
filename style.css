@@ -1,0 +1,759 @@
+
+*  
+    { 
+    margin:         0px; 
+    padding:        0px; 
+    border:         0px;
+    /*width:          100%;*/
+   
+    }
+
+body {
+    font: 50%/1.2 "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    color: #000000;
+    background-color: darkolivegreen;
+}
+
+
+section {
+    z-index: 3; /* Ensure it sits above other background elements */
+}
+
+#wrapper 
+    {       
+    position:       relative;
+    background-image: url('bourbon_background.webp');
+    background-color: #8C4A2F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;    
+    z-index: 2;
+}
+
+    #wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(140, 74, 47, 0.5); /* Bourbon color with transparency */
+        background-size: cover;
+        pointer-events: none; /* Ensures interaction passes through */
+        z-index:1;
+    }
+
+h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px); /* Older browsers */
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 2.1em;
+    color: beige;
+}
+
+h3 {
+    font-size:      1.8em;
+    text-align:     center;
+    color:          beige;
+}
+
+h4 {
+    font-size: 1.6em;
+    color: #E1C16E;
+}
+
+h5 {
+    font-size:      1.4em;
+}
+
+h6 {
+    font-size:      1.2em; 
+}
+
+p {
+    font-size:      1.3em;
+    color:          beige;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto; /* Let height be determined by the aspect ratio of the image */
+    overflow: hidden;
+    z-index: 3;
+}
+
+#banner {
+    width: 100%;
+    padding-top: calc(360 / 820 * 100%); /* Maintain the 820x360 aspect ratio */
+    background-image: url("bourbonsourbanner2.png");
+    background-size: cover; /* Fill the width while preserving aspect ratio */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img#logo {
+    position: absolute;
+    top: 40%;
+    right: 2vw; /* 2vw from the right edge */
+    transform: translateY(-50%);
+    width: 30vw; /* Scales based on viewport width */
+    max-width: 600px; /* Adjust to set a maximum size */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 1 / 1; /* Ensure square aspect ratio */
+    object-fit: contain; /* Keeps image within the container size */
+}
+
+#button_align {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 5px 0; /* Reduced padding */
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh; /* Slightly reduced height */
+    font-size: 1.8vh; /* Slightly reduced font size */
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+}
+
+#next-event-frame {
+    width: 90%; /* Adjusted to fit within the main page's content width */
+    max-width: 1200px; /* Set a maximum width to keep it consistent with other elements */
+    margin: 20px auto; /* Centered with auto margins */
+    background-color: #34495e; /* Background color similar to the site's theme */
+    color: #ecf0f1; /* Light text color for readability */
+    display: flex;
+    justify-content: space-between; /* Space between summary and button */
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+    z-index: 2; /* Ensure it sits above other sections */
+    position: relative; /* Establishes stacking context */
+    overflow: hidden; /* Prevents elements from overflowing */
+}
+
+    #next-event-frame:hover {
+        transform: translateY(-3px); /* Slight lift on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    }
+
+.event-details {
+    flex: 1; /* Allows the text section to expand within the container */
+    padding-right: 20px; /* Spacing between text and button */
+    overflow: hidden; /* Prevents overflow */
+}
+
+    .event-details h3 {
+        font-size: 1.8em;
+        margin: 0;
+        color: #f39c12; /* Highlight color for event title */
+        word-wrap: break-word; /* Ensures long text wraps correctly */
+        white-space: normal; /* Allows normal text wrapping */
+    }
+
+.view-more-link {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #e74c3c; /* Highlight color for link */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    white-space: nowrap; /* Prevents button text from wrapping */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    flex-shrink: 0; /* Prevents the button from shrinking */
+}
+
+    .view-more-link:hover {
+        color: #fff;
+        background-color: #c0392b; /* Darker red on hover */
+    }
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar li {
+    flex: 1; /* Distributes available space evenly */
+    text-align: center;
+}
+
+.navbar a {
+    display: block;
+    padding: 0.5vw; /* Reduced padding for better fitting */
+    color: beige;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+    .navbar a:hover {
+        background-color: #444;
+        border: 2px solid white;
+    }
+
+#bookbuttons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 10px; /* Reduced margin */
+}
+
+/* Media Query for very small screens */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        font-size: 1.6vh; /* Further reduce font size on very small screens */
+        height: 4.5vh; /* Adjust navbar height */
+    }
+
+        .navbar a {
+            padding: 0.4vw; /* Smaller padding for smaller screens */
+        }
+}
+
+
+
+
+/* styling for tablets */
+/*
+@media only screen and (min-width: 768px) {
+    header {
+        position: relative;
+        min-height: 36vh;
+        max-height: 50vh;
+        width:  100%;
+    }
+    
+    #banner {
+        position: relative;
+        background-image: url("bourbonsourbanner2.png");
+       
+        min-height: 36vh;
+        max-height: 50vh;
+       
+        background-position: left / top;
+        background-repeat: no-repeat;
+        background-size: 100% auto; 
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+        
+        #bookbuttons ul{
+            float: right;
+            flex-direction: column;
+            height: auto;
+            background-color: transparent;
+            font-size: 12px;
+            width: fit-content;
+            margin-right: 4%;
+        }
+    
+    }
+*/
+
+/* styling for very small screens under 370px 
+@media only screen and (max-width: 370px) {
+    .navbar {
+        display:        flex;
+        height:         43px;
+        font-size:      1.3em;
+        flex-direction: row;
+        flex-wrap:      wrap;
+        font-weight:    900;
+        align-items:    center;
+        }
+}
+*/
+
+.about_title {
+    position:       relative;
+    height:         27px;
+    padding:       10px;
+    padding-top:   20px;
+    z-index: 4;
+}
+
+.wrapbox {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 0px;
+    width: 90%;
+    height: 500px;
+    background-color: #a56c6cc7;
+    margin-left: 3%;
+    margin-right: 4%;
+    padding-right: 0px;
+    border: 2px solid beige;
+    border-radius: 2px;
+    overflow-y: scroll;
+    z-index: 3; /* Ensure it sits above other sections */
+}
+
+
+.about_img{   
+    position:       sticky;
+    width:          100%;
+}
+
+#about_us{
+    display:        inline-flex;
+    flex-basis:     auto; 
+    width:          100%;
+    height:         max-content;
+}
+
+#about_mu{
+    display:        flex;
+    flex-basis:     auto;
+    width:          100%;
+    height:         max-content;
+    flex-flow:      row wrap;
+
+}
+
+#about_ph{
+    display:        flex;
+    flex-basis:     auto;
+    height:         max-content;
+    width:          100%;
+    flex-flow:      row wrap;
+}
+
+#imgbox1 {
+    background-color: #a56c6c;
+    display: flex; /* Changed 'flexbox' to 'flex' */
+    width: 35%;
+    margin-left: 2%;
+    margin-top: 4%;
+    align-self: flex-start; /* Changed 'top left' to 'flex-start' */
+    padding: 0px;
+}
+
+#imgbox3 {
+    background-color: #a56c6c;
+    display: flex; /* Changed 'flexbox' to 'flex' */
+    width: 35%;
+    margin-left: 2%;
+    margin-top: 4%;
+    align-self: flex-start; /* Changed 'top' to 'flex-start' */
+    padding: 0px;
+}
+
+
+#us_text{
+    display:        flexbox;
+    width:          60%;
+    align-content:  space-around;
+    text-align:     center;
+}
+
+#imgbox2 {
+    background-color: #a56c6c;
+    position: sticky;
+    display: flex; /* Changed 'flexbox' to 'flex' */
+    width: 35%;
+    right: 0px;
+    align-self: flex-start; /* Changed 'top' to 'flex-start' */
+}
+
+
+#mu_text{
+    width:          60%;
+    display:        flexbox;
+    align-content:  space-around;
+    text-align:     center;
+
+}
+
+
+.wrap, .titlewrap {
+    display:        flex;
+    width:          100%;
+    margin-left:    1%;
+    margin-right:   1%;
+    
+}
+
+.testimonials ul {
+    background-color: beige;
+    flex-direction: column;
+    }
+
+.testimonials li {
+    display:        flex;
+    border:         4px solid #533737a1;
+    }
+
+.testimonials p {
+    color:          #000000;
+    font-size:      13px;
+    }
+
+#imgbox4{
+    padding-left:   4px;
+    padding-top:    4px;
+    display:        flexbox;
+    width:          45%;
+    min-width:      150px;
+    left:           0px;
+    align-self:     center;
+    }
+
+#imgbox5{
+    padding-left:   4px;
+    padding-top:    4px;
+    display:        flexbox;
+    width:          45%;
+    min-width:      150px;
+    left:           0px;
+    align-self:     center;
+    }
+
+#imgbox6{
+    padding-left:   4px;
+    padding-top:    4px;
+    display:        flexbox;
+    width:          45%;
+    min-width:      150px;
+    left:           0px;
+    align-self:     center;
+    }
+
+#imgbox7{
+    padding-left:   4px;
+    padding-top:    4px;
+    display:        flexbox;
+    width:          45%;
+    min-width:      150px;
+    left:           0px;
+    align-self:     center;
+    }
+
+#imgbox8{
+    padding-left:   4px;
+    padding-top:    4px;
+    display:        flexbox;
+    width:          45%;
+    min-width:      150px;
+    left:           0px;
+    align-self:     center;
+    }
+
+#testi_1{
+    display:        flexbox;
+    width:          68%;
+    align-content:  space-around;
+    text-align:     center;
+    place-self:     center;
+}
+
+#testi_2{
+    display:        flexbox;
+    width:          68%;
+    align-content:  space-around;
+    text-align:     center;
+    place-self:     center;
+}
+
+#testi_3{
+    display:        flexbox;
+    width:          68%;
+    align-content:  space-around;
+    text-align:     center;
+    place-self:     center;
+}
+
+#testi_4{
+    display:        flexbox;
+    width:          68%;
+    align-content:  space-around;
+    text-align:     center;
+    place-self:     center;
+}
+
+
+.watch p {
+    text-align:     center;
+}
+
+.vidbox1 {
+    place-self:     center;  
+}
+
+
+.listen .vidbox1 {
+    display:        flex;
+    margin-bottom:  6px;
+}
+
+.listen p {
+    text-align:     center;
+    margin-bottom:  6px;
+}
+.audiocap {
+    display:        flexbox;
+    font-size:      16px;
+    text-indent:    10px;
+    margin-top:     10px;
+    text-decoration: underline;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: beige;
+}
+
+
+
+.gallery {
+    position:       relative;
+    top:            0px;
+    width:          90%;
+    height:         750px;
+    margin-top:     0px;
+    display:        grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    place-content:  start space-evenly;
+    place-items:    center;
+    border:         2px solid beige;
+    border-radius:  2px;
+    background-color: #a56c6cc7;
+    margin-left:    3%;
+    overflow-y:     scroll;
+}
+
+.gallery p {
+    text-align:     center;
+}
+
+.photo {
+    height: 300px;
+    border:         5px double burlywood;
+    border-radius:  5px;
+    overflow-y:     hidden;
+}
+
+.gallph {
+    width:          100%;
+    place-self:     center;
+}
+
+.photo:hover {
+    background-color: #000000;
+}
+
+#form_top {
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 90%; /* Matches the width of #contact_top */
+    height: 500px;
+    overflow-y: hidden;
+    border: 2px solid beige;
+    border-radius: 2px;
+    color: beige;
+    background-color: #a56c6cc7;
+    margin: 0 auto; /* Centers the form */
+}
+
+#contact_top {
+    position: relative;
+    width: 90%; /* Matches the width of #form_top */
+    display: grid;
+    grid-template-columns: 1fr 2fr auto; /* Three columns: titles, content, fixed-width map */
+    gap: 1.5%;
+    align-items: center;
+    border: 2px solid beige;
+    border-radius: 2px;
+    color: #a56c6c;
+    background-color: beige;
+    padding: 5px;
+    margin: 20px auto; /* Centers the contact section */
+}
+
+    #contact_top iframe {
+        width: 100%; /* Ensure the map takes up its container width */
+        max-width: 400px; /* Fixed width for the map */
+        height: 250px; /* Set a consistent height for the map */
+        border-radius: 4px; /* Optional: round the corners of the map */
+    }
+
+@media only screen and (max-width: 768px) {
+    #contact_top {
+        grid-template-columns: 1fr 1fr; /* Keep first two columns side-by-side */
+        grid-template-rows: auto auto; /* Make space for the map below */
+        grid-template-areas:
+            "titles content"
+            "map map"; /* Position map to take up the full width below */
+    }
+
+        #contact_top .contact-titles {
+            grid-area: titles;
+        }
+
+        #contact_top .contact-content {
+            grid-area: content;
+        }
+
+        #contact_top iframe {
+            grid-area: map;
+            width: 100%; /* Make the map take up the full width */
+            height: 200px; /* Reduce the height for smaller screens */
+            margin-top: 10px; /* Adds some space between text and the map */
+        }
+}
+
+
+
+
+#contact_top h3 {
+    color:          #a56c6c;
+}
+footer {
+    position:       relative;
+    display:        block;
+    width:          99%;
+    height:         160px;
+    border:         2px solid beige;
+    border-radius:  2px;
+    background-color: #a56c6c;
+    color:          beige;
+    }
+
+footer p {
+    text-align:     center;
+    font-size:      16px;
+}
+
+#map {
+    height: 200px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+  }
+
+input {
+    width: 96%;
+    padding: 12px 20px;
+    margin: 8px 2%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 96%;
+    margin: 8px 2%;
+    box-sizing: border-box;
+}
+
+.pure-group honeypot-field {
+    height: 0px;
+    width: 0px;
+}
+
+
+#honeypot {
+    height: 0px;
+    width: 0px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2px;
+    border-radius: 5px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background-color: #a56c6c;
+    color:          beige;
+  }
+  
+  /* Twitter */
+  /*.fa-twitter {
+    background-color: #a56c6c;
+    color:          beige;
+  }
+  /* INSTA */
+
+  .fa-instagram {
+    background-color: #a56c6c;
+    color:          beige;
+  }
+
+  .fa-paper-plane {
+    background-color: #a56c6cc7;
+    color:            beige;
+    border: 2px solid beige;
+    border-radius: 5px;
+  }
+
+  #form_top button {
+    background-color: transparent;
+    width: 20%;
+  }
+  
+  @media only screen and (min-width: 1100px) {
+    .double_wide {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .gallery {
+        grid-template-columns: auto auto auto;
+        margin-left:    1.5%;
+        width:          95%;
+    }
+
+    #form_top {
+        width:          95%;
+        margin-left:    1.5%;
+        }
+    
+}
+
+
+
+/* .fa-brands .fa-tiktok {
+    background-color: #a56c6c;
+    color:          beige;
+  } */
+
+/* #about_us, .testimonials, #watch, #listen, #form_top, #contact_top {
+        width: 48%;
+}*/
