@@ -9,14 +9,14 @@
 
  <!-- Main Page -->
     <url>
-        <loc>https://bourbonsourband.com/index.html</loc>
+        <loc>https://www.bourbonsourband.com/index.html</loc>
         <lastmod>2024-10-19T03:13:04+00:00</lastmod>
         <priority>1.0</priority>
     </url>
     
     <!-- Events Page -->
     <url>
-        <loc>https://bourbonsourband.com/events/index.html</loc>
+        <loc>https://www.bourbonsourband.com/events/index.html</loc>
         <lastmod>2024-10-30</lastmod>
         <priority>0.8</priority>
     </url>
