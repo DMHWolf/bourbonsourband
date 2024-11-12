@@ -7,7 +7,7 @@
       var fields = Object.keys(elements).filter(function(k) {
         if (elements[k].name === "honeypot") {
           honeypot = elements[k].value;
-          return false;
+          return;
         }
         return true;
       }).map(function(k) {
