@@ -62,17 +62,26 @@ main ul {
     gap: 1rem;
 }
 
-main ul li {
-    background-color: #2F4F4F;
-    border: 1px solid #ccc;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    color: #FAEBD7;
-    width: 800px;
-    margin: 0 auto;
+    main ul li {
+        background-color: #2F4F4F;
+        border: 1px solid #ccc;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        font-family: 'Lora', serif;
+        font-size: 1rem;
+        color: #FAEBD7;
+        width: 90%; /* Use percentage for responsive scaling */
+        max-width: 800px; /* Optional: Maintain a max width for larger screens */
+        margin: 0 auto;
+        text-align: justify; /* Justify text */
+    }
+
+@media (max-width: 600px) {
+    main ul li {
+        padding: 1rem; /* Reduce padding on smaller screens */
+        font-size: 0.9rem; /* Adjust font size */
+    }
 }
 
 /* Footer */
