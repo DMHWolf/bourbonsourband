@@ -45,13 +45,15 @@ main h3 {
     margin-bottom: 0.5rem;
 }
 
-main p {
-    font-family: 'Lora', serif;
-    font-size: 1.1rem;
-    color: #FAEBD7; /* Antique Lace */
-    margin-bottom: 1rem;
-    text-align: justify;
-}
+    main p {
+        font-family: 'Lora', serif;
+        font-size: 1.1rem;
+        color: #FAEBD7; /* Antique Lace */
+        margin-bottom: 1rem;
+        text-align: justify;
+        width: 90%; /* Use percentage for responsive scaling */
+        max-width: 800px; /* Optional: Maintain a max width for larger screens */
+    }
 
 main ul {
     list-style: none;
