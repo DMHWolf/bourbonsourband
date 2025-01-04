@@ -63,7 +63,7 @@ main ul {
 }
 
 main ul li {
-    background-color: #f8f9fa;
+    background-color: #2F4F4F;
     border: 1px solid #ccc;
     padding: 2rem;
     border-radius: 10px;
@@ -71,7 +71,7 @@ main ul li {
     font-family: 'Lora', serif;
     font-size: 1rem;
     color: #FAEBD7;
-    max-width: 800px;
+    width: 800px;
     margin: 0 auto;
 }
 
