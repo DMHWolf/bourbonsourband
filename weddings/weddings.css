@@ -1,11 +1,13 @@
 /* Import Elegant Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-body::after {
-    color: #FAEBD7; /* Antique Lace */
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    color: #FAEBD7 !important; /* Antique Lace */
 }
 
-/* General Styles */
 main {
     font-family: 'Lora', serif;
     line-height: 1.6;
@@ -66,7 +68,7 @@ main ul li {
 }
 
 /* Footer */
-main footer {
+footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #222;
