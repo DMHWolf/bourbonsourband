@@ -8,7 +8,7 @@ main {
     color: #FAEBD7; /* Antique Lace */
 }
 
-h1 {
+main h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     text-align: center;
@@ -16,7 +16,7 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-h2 {
+main h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin-top: 2rem;
@@ -24,14 +24,14 @@ h2 {
     text-align: center;
 }
 
-h3 {
+main h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     color: #FAEBD7; /* Antique Lace */
     margin-bottom: 0.5rem;
 }
 
-p {
+main p {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
     color: #FAEBD7; /* Antique Lace */
@@ -39,7 +39,7 @@ p {
     text-align: justify;
 }
 
-ul {
+main ul {
     list-style: none;
     padding: 0;
     margin: 2rem 0;
@@ -48,7 +48,7 @@ ul {
     gap: 1rem;
 }
 
-ul li {
+main ul li {
     background-color: #f8f9fa;
     border: 1px solid #ccc;
     padding: 2rem;
@@ -62,7 +62,7 @@ ul li {
 }
 
 /* Footer */
-footer {
+main footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #222;
