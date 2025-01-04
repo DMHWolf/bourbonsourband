@@ -35,6 +35,64 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Schema Markup for Wedding Page-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "MusicGroup",
+          "name": "Bourbon Sour Band",
+          "url": "https://www.bourbonsourband.com",
+          "logo": "https://www.bourbonsourband.com/resources/bourbon_logo_new.png",
+          "description": "Queenstown's premier live band for weddings, corporate events, and parties.",
+          "sameAs": [
+            "https://www.facebook.com/bourbonsourband",
+            "https://www.instagram.com/bourbonsourband"
+          ],
+          "foundingLocation": {
+            "@type": "Place",
+            "name": "Queenstown, New Zealand"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Queenstown",
+            "addressRegion": "Otago",
+            "addressCountry": "New Zealand"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+64-21-634-850",
+            "contactType": "Customer Service",
+            "areaServed": "NZ",
+            "availableLanguage": ["English"]
+          },
+          "event": {
+            "@type": "Event",
+            "name": "Wedding Entertainment",
+            "startDate": "2025-01-01",
+            "endDate": "2026-12-31",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "Place",
+              "name": "Queenstown",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Queenstown",
+                "addressRegion": "Otago",
+                "addressCountry": "New Zealand"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://www.bourbonsourband.com/weddings",
+              "price": "2000.00",
+              "priceCurrency": "NZD",
+              "availability": "https://schema.org/InStock",
+              "validFrom": "2024-01-01"
+            }
+          }
+        }
+    </script>
     <!-- Stylesheets -->
     <link href="../style.css" type="text/css" rel="stylesheet" />
     <link href="weddings.css" type="text/css" rel="stylesheet" />
