@@ -3,7 +3,7 @@
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
     text-align: center;
-    color: #222;
+    color: #fff;
     margin-bottom: 1rem;
 }
 
@@ -11,7 +11,7 @@
     font-family: 'Great Vibes', cursive;
     font-size: 2rem;
     margin-top: 2rem;
-    color: #444;
+    color: #fff;
     text-align: center;
 }
 
@@ -42,20 +42,20 @@
 }
 
 #wedchoose li {
-    background-color: #f7f7f7;
+    background-color: #633232;
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
-    color: #555;
+    color: #fff;
 }
 
 /* Package Styles */
 .package {
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #f8f9fa;
+    background-color: #633232;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
@@ -65,14 +65,14 @@
 
 .package h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 
 .package p {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #555;
+    color: #fff;
 }
 
 /* Footer */
