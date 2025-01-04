@@ -1,23 +1,33 @@
+/* Import Elegant Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
 
 #weddings h1 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 3rem;
     text-align: center;
-    color: #fff;
-    margin-bottom: 1rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
 }
 
 #weddings h2 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin-top: 2rem;
-    color: #fff;
+    color: #444;
     text-align: center;
 }
 
 #weddings p {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #555;
     margin-bottom: 1rem;
-    font-size: 1rem;
     text-align: justify;
 }
 
@@ -42,20 +52,21 @@
 }
 
 #wedchoose li {
-    background-color: #633232;
+    background-color: #f7f7f7;
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: 'Lora', serif;
     font-size: 1rem;
-    color: #fff;
+    color: #555;
 }
 
 /* Package Styles */
 .package {
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #633232;
+    background-color: #f8f9fa;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
@@ -64,18 +75,17 @@
 }
 
 .package h3 {
+    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #fff;
+    color: #333;
     margin-bottom: 0.5rem;
 }
 
 .package p {
+    font-family: 'Lora', serif;
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #fff;
+    color: #555;
 }
 
 /* Footer */
-
-/* Import Great Vibes Font */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
