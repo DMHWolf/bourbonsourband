@@ -1,7 +1,7 @@
 /* Import Elegant Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-body {
+body::after {
     color: #FAEBD7; /* Antique Lace */
 }
 
