@@ -16,6 +16,23 @@ body {
         background-color: transparent;
     }
 
+.wrapbox {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 0px;
+    width: 90%;
+    height: 500px;
+    background-color: #a56c6cc7;
+    margin-left: 3%;
+    margin-right: 4%;
+    padding-right: 0px;
+    border: 2px solid beige;
+    border-radius: 2px;
+    overflow-y: scroll;
+    z-index: 3; /* Ensure it sits above other sections */
+}
+
 main {
     font-family: 'Lora', serif;
     line-height: 1.6;
