@@ -53,6 +53,8 @@ main h3 {
         text-align: justify;
         width: 90%; /* Use percentage for responsive scaling */
         max-width: 800px; /* Optional: Maintain a max width for larger screens */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
     }
 
 main ul {
