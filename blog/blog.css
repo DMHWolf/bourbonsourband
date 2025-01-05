@@ -8,6 +8,12 @@ body {
     color: #FAEBD7 !important; /* Antique Lace */
 }
 
+a {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    color: #000; /* Antique Lace */
+}
+
 #wrapper {
     background-color: transparent;
 }
