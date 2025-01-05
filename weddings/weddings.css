@@ -8,6 +8,31 @@ body {
     color: #FAEBD7 !important; /* Antique Lace */
 }
 
+a {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: #556B2F; /* Dark olive background */
+    color: #FAEBD7; /* Antique white text */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 25px; /* Rounds the corners */
+    font-family: 'Lora', serif; /* Matches your font choice */
+    font-size: 1rem; /* Adjust text size */
+    text-align: center; /* Centers the text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+    a:hover {
+        background-color: #6B8E23; /* Slightly lighter olive on hover */
+        transform: scale(1.05); /* Slight zoom effect on hover */
+        color: #FFFFFF; /* Optional: Change text to white on hover */
+    }
+
+    a:active {
+        background-color: #3B5323; /* Darker olive for active state */
+        transform: scale(0.95); /* Slight shrink effect when clicked */
+    }
+
+
 #wrapper {
     background-color: transparent;
 }
