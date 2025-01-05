@@ -115,7 +115,7 @@ main {
     .wrapbox h1 {
         font-family: 'Playfair Display', serif; /* Elegant font for titles */
         font-size: 2rem;
-        color: #2f4f4f; /* Darker color for readability */
+        
         margin-bottom: 15px;
         text-align: center;
     }
@@ -124,7 +124,7 @@ main {
         font-family: 'Lora', serif; /* Matches body font for consistency */
         font-size: 1rem;
         line-height: 1.8; /* Improves readability */
-        color: #333; /* Neutral dark text color */
+        
         margin-bottom: 15px;
         text-align: justify; /* Aligns text neatly */
     }
