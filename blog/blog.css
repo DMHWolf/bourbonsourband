@@ -95,7 +95,7 @@ main {
 }
 
 .wrapbox {
-    background-color: #2F4F4F; /* Light background for contrast */
+    background-color: #2F4F4F; 
     color: antiquewhite;
     padding: 20px;
     border-radius: 10px;
@@ -115,7 +115,7 @@ main {
     .wrapbox h1 {
         font-family: 'Playfair Display', serif; /* Elegant font for titles */
         font-size: 2rem;
-        
+        color: antiquewhite;
         margin-bottom: 15px;
         text-align: center;
     }
@@ -124,7 +124,7 @@ main {
         font-family: 'Lora', serif; /* Matches body font for consistency */
         font-size: 1rem;
         line-height: 1.8; /* Improves readability */
-        
+        color: antiquewhite;
         margin-bottom: 15px;
         text-align: justify; /* Aligns text neatly */
     }
