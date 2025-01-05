@@ -747,6 +747,20 @@ textarea {
     
 }
 
+footer a {
+    display: inline-block; /* Ensures block-like button spacing */
+    background-color: #556B2F; /* Dark Olive Green */
+    color: #FAEBD7; /* Antique White text */
+    text-decoration: none;
+    padding: 0.4rem 0.6rem; /* Minimal padding for a tidy button */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+    footer a:hover {
+        background-color: #6B8E23; /* Lighter shade of olive on hover */
+    }
+
 
 
 /* .fa-brands .fa-tiktok {
