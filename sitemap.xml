@@ -1,24 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 
+	<!--  Main Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/index.html</loc>
+		<lastmod>2024-10-19T03:13:04+00:00</lastmod>
+		<priority>1.0</priority>
+	</url>
 
- <!-- Main Page -->
-    <url>
-        <loc>https://www.bourbonsourband.com/index.html</loc>
-        <lastmod>2024-10-19T03:13:04+00:00</lastmod>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Events Page -->
-    <url>
-        <loc>https://www.bourbonsourband.com/events/index.html</loc>
-        <lastmod>2024-10-30</lastmod>
-        <priority>0.8</priority>
-    </url>
+	<!--  Events Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/events/index.html</loc>
+		<lastmod>2024-10-30</lastmod>
+		<priority>0.8</priority>
+	</url>
+
+	<!--  Gallery Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/gallery/index.html</loc>
+		<lastmod>2025-01-01</lastmod>
+		<priority>0.7</priority>
+	</url>
+
+	<!--  Watch Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/watch/index.html</loc>
+		<lastmod>2025-01-01</lastmod>
+		<priority>0.7</priority>
+	</url>
+
+	<!--  Listen Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/listen/index.html</loc>
+		<lastmod>2025-01-01</lastmod>
+		<priority>0.7</priority>
+	</url>
+
+	<!--  Weddings Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/weddings/index.html</loc>
+		<lastmod>2025-01-01</lastmod>
+		<priority>0.8</priority>
+	</url>
+
+	<!--  Blog Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/blog/index.html</loc>
+		<lastmod>2025-01-01</lastmod>
+		<priority>0.6</priority>
+	</url>
+
+	<!--  Contact Page  -->
+	<url>
+		<loc>https://www.bourbonsourband.com/faq/index.html</loc>
+		<lastmod>2025-01-01</lastmod>
+		<priority>0.9</priority>
+	</url>
 
 </urlset>
+
