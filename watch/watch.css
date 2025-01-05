@@ -22,7 +22,8 @@ body {
     position: relative;
     top: 0px;
     width: 90%;
-    height: 500px;
+    height: auto; /* Let content define the height */
+    max-height: 500px; /* Optional: Limit height with scrolling */
     background-color: #a56c6cc7;
     margin-left: 3%;
     margin-right: 4%;
@@ -92,16 +93,41 @@ main {
             font-family: 'Lora', serif;
             font-size: 1rem;
             color: #FAEBD7;
-            width: 90%; /* Use percentage for responsive scaling */
-            max-width: 800px; /* Optional: Maintain a max width for larger screens */
+            padding: 1rem; /* Reduce padding for better video fit */
+            max-width: none; /* Ensure videos span full container width */
             margin: 0 auto;
             text-align: justify; /* Justify text */
         }
+
+/* Style for video container (vidbox1) */
+.vidbox1 {
+    position: relative;
+    width: 100%; /* Ensure full width of container */
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0; /* Necessary for aspect ratio */
+    overflow: hidden; /* Prevent overflow */
+    margin: 1rem 0; /* Optional: Add spacing between videos */
+}
+
+    /* Style for embedded video (iframe, video) */
+    .vidbox1 iframe,
+    .vidbox1 video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Scale to container width */
+        height: 100%; /* Maintain aspect ratio */
+        border: none; /* Remove any default borders */
+    }
+
 
 @media (max-width: 600px) {
     main ul li {
         padding: 1rem; /* Reduce padding on smaller screens */
         font-size: 0.9rem; /* Adjust font size */
+    }
+    vidbox1 {
+        margin: 0.5rem 0; /* Adjust spacing */
     }
 }
 
